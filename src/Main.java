@@ -8,8 +8,9 @@ public class Main {
         persons.add(new Person("Семен", "Слепаков", 30));
         persons.add(new Person("Вася", "Бубун Чума", 22));
         persons.add(new Person("Коля", "Иванов", 50));
+        persons.add(new Person("Петя", "Пупкин Кудрявый Младший", 40));
 
-        Collections.sort(persons, new PersonComparator());
+        Collections.sort(persons, new PersonComparator(2));
 
         System.out.println(persons);
     }
